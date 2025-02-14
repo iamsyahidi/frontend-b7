@@ -23,7 +23,9 @@ export const updateMeeting = async (meetingId, meetingData) => {
   return response.data.data;
 };
 
-export const deleteMeeting = async (meetingId) => {
-  const response = await axios.delete(`${API_BASE_URL}/${meetingId}`);
+export const deleteMeeting = async (id, meetingId) => {
+  const response = await axios.delete(
+    `${API_BASE_URL}/${id}?meeting_id=${meetingId}`,
+  );
   return response.data.data;
 };

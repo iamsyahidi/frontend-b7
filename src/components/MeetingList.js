@@ -25,7 +25,10 @@ export default function MeetingList({ meetings, onDelete }) {
               <Link href={`/edit/${meeting.id}`}>
                 <button className="edit">Edit</button>
               </Link>
-              <button className="delete" onClick={() => onDelete(meeting.id)}>
+              <button
+                className="delete"
+                onClick={() => onDelete(meeting.id, meeting.meeting_id)}
+              >
                 Delete
               </button>
             </td>

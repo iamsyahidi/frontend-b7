@@ -21,8 +21,8 @@ export default function Home() {
     setTotal(data.total);
   };
 
-  const handleDelete = async (meetingId) => {
-    await deleteMeeting(meetingId);
+  const handleDelete = async (id, meetingId) => {
+    await deleteMeeting(id, meetingId);
     fetchMeetings(); // Refresh list after delete
   };
 
