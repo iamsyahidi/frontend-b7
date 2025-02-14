@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:3002/v1/meets"; // Sesuaikan dengan URL backend Anda
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL; // Sesuaikan dengan URL backend Anda
 
 export const getMeetings = async (page = 1, limit = 10) => {
   const response = await axios.get(
