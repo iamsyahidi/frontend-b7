@@ -1,0 +1,148 @@
+/* src/styles/globals.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #444;
+    text-align: center;
+}
+
+button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tombol Create */
+button.create {
+    background-color: #28a745; /* Hijau */
+}
+
+button.create:hover {
+    background-color: #218838; /* Hijau lebih gelap */
+}
+
+/* Tombol Edit */
+button.edit {
+    background-color: #ffc107; /* Kuning */
+    color: #000; /* Teks hitam */
+}
+
+button.edit:hover {
+    background-color: #e0a800; /* Kuning lebih gelap */
+}
+
+/* Tombol Delete */
+button.delete {
+    background-color: #dc3545; /* Merah */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Merah lebih gelap */
+}
+
+/* Tombol Previous dan Next */
+button.nav {
+    background-color: #6c757d; /* Abu-abu */
+}
+
+button.nav:hover {
+    background-color: #5a6268; /* Abu-abu lebih gelap */
+}
+
+button.nav:disabled {
+    background-color: #cccccc; /* Abu-abu muda */
+    cursor: not-allowed;
+}
+
+/* Spacing dan Border untuk Tombol */
+button {
+    margin: 5px; /* Jarak antar tombol */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid transparent; /* Border transparan secara default */
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Tombol Create */
+button.create {
+    background-color: #28a745; /* Hijau */
+    border-color: #218838; /* Border hijau lebih gelap */
+}
+
+button.create:hover {
+    background-color: #218838; /* Hijau lebih gelap */
+}
+
+/* Tombol Edit */
+button.edit {
+    background-color: #ffc107; /* Kuning */
+    color: #000; /* Teks hitam */
+    border-color: #e0a800; /* Border kuning lebih gelap */
+}
+
+button.edit:hover {
+    background-color: #e0a800; /* Kuning lebih gelap */
+}
+
+/* Tombol Delete */
+button.delete {
+    background-color: #dc3545; /* Merah */
+    border-color: #c82333; /* Border merah lebih gelap */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Merah lebih gelap */
+}
+
+/* Tombol Previous dan Next */
+button.nav {
+    background-color: #6c757d; /* Abu-abu */
+    border-color: #5a6268; /* Border abu-abu lebih gelap */
+}
+
+button.nav:hover {
+    background-color: #5a6268; /* Abu-abu lebih gelap */
+}
+
+button.nav:disabled {
+    background-color: #cccccc; /* Abu-abu muda */
+    border-color: #cccccc; /* Border abu-abu muda */
+    cursor: not-allowed;
+}
